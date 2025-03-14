@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Website Blocker",
+  "version": "1.0.0",
+  "description": "Block websites you want to avoid",
+  "permissions": ["storage", "webNavigation", "declarativeNetRequest", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/icon16.svg",
+      "48": "icons/icon48.svg",
+      "128": "icons/icon128.svg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icons/icon16.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  }
+}
